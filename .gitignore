@@ -1,0 +1,34 @@
+# Secrets & credentials — NEVER commit
+*.env
+.env
+.env.*
+*credentials*
+*secret*
+*client_secret*
+*.pem
+*.key
+*.pfx
+*.p12
+*.cer
+*.crt
+*api_credentials*.json
+
+# Build output
+docs/_build/out/
+docs/_build/reference.docx
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*~
+*.swp
+.idea/
+.vscode/
+
+# Office temp files
+~$*
+
+# Local POV evidence (keep customer data out of this reusable repo)
+**/evidence/
+**/figures/local/
+*.flowexport.json
