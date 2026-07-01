@@ -67,6 +67,8 @@ CSW-Epic-Microsegmentation-Guide/
 
 **POV teams:** start with [`validation/01-pov-test-plan.md`](./validation/01-pov-test-plan.md).
 
+**Healthcare compliance teams:** pair this guide with the [HIPAA technical runbook](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HIPAA) and [HITRUST mapping](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HITRUST-CSF) in [CSW-Compliance-Mapping](https://github.com/chandrapati/CSW-Compliance-Mapping) — this repo is the *how* for Epic tiers; those repos are the *what to prove* for audit.
+
 ---
 
 ## Epic tier model (high level)
@@ -101,12 +103,26 @@ Detail: [`docs/01-epic-architecture-tiers.md`](./docs/01-epic-architecture-tiers
 
 | Repo | Use when |
 |------|----------|
-| [CSW-Identity-Integration-Guide](https://github.com/chandrapati/CSW-Identity-Integration-Guide) | Scope policy on AD / Entra users and groups |
-| [CSW-Compliance-Mapping](https://github.com/chandrapati/CSW-Compliance-Mapping) | HIPAA, HITRUST, NIST control mapping |
-| [CSW-Policy-Lifecycle](https://github.com/chandrapati/CSW-Policy-Lifecycle) | ADM → publish → enforce deep dive |
-| [CSW-Agent-Installation-Guide](https://github.com/chandrapati/CSW-Agent-Installation-Guide) | SCCM / Ansible agent rollout |
+| [CSW-Compliance-Mapping](https://github.com/chandrapati/CSW-Compliance-Mapping) | **Start here for audit** — HIPAA §164.312, HITRUST, NIST control mapping and quarterly evidence playbook |
+| [CSW-Policy-Lifecycle](https://github.com/chandrapati/CSW-Policy-Lifecycle) | ADM → publish → enforce deep dive (companion to Phase 3–4) |
+| [CSW-Identity-Integration-Guide](https://github.com/chandrapati/CSW-Identity-Integration-Guide) | Scope policy on AD / Entra users and clinical identity |
+| [CSW-Agent-Installation-Guide](https://github.com/chandrapati/CSW-Agent-Installation-Guide) | SCCM / Ansible agent rollout on Epic hosts |
 | [csw-secure-connector](https://github.com/chandrapati/csw-secure-connector) | Private Epic subnets without inbound 443 |
 | [CSW-POV-Tooling](https://github.com/chandrapati/CSW-POV-Tooling) | API scripts + agent log-bundle analysis |
+
+### Compliance mapping — healthcare focus
+
+| Framework | Runbook | How this Epic guide uses it |
+|-----------|---------|-------------------------------|
+| [HIPAA Security Rule](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HIPAA) | [Technical runbook](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/HIPAA/CSW-HIPAA-Technical-Runbook.md) | Phase 5 quarterly pack → §164.312 evidence |
+| [HIPAA 2025 NPRM](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HIPAA-2025-NPRM) | [NPRM runbook](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/HIPAA-2025-NPRM/CSW-HIPAA-NPRM-Technical-Runbook.md) | Proposed mandatory segmentation narrative |
+| [HITRUST CSF v11](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HITRUST-CSF) | [HITRUST runbook](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/HITRUST-CSF/CSW-HITRUST-Technical-Runbook.md) | Harmonized HIPAA + ISO evidence |
+| [NIST CSF 2.0](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/NIST-CSF-2) | [CSF runbook](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/NIST-CSF-2/CSW-CSF-Technical-Runbook.md) | PR.IR segmentation maturity |
+| [Compliance evidence playbook](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/docs/compliance-evidence-playbook.md) | Universal 4-phase programme | Overlaps Phase 1–5 checklists here |
+| [Framework scope design](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/docs/framework-scope-design.md) | Workshop aid | `ePHI-Zone` / `EHR` scope patterns → Epic tier tree |
+
+> **Suggested healthcare journey:**  
+> [Compliance evidence playbook](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/docs/compliance-evidence-playbook.md) → **CSW-Epic-Microsegmentation-Guide** → [HIPAA runbook](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/HIPAA/CSW-HIPAA-Technical-Runbook.md) → [CSW-Policy-Lifecycle](https://github.com/chandrapati/CSW-Policy-Lifecycle)
 
 ---
 

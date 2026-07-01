@@ -23,7 +23,8 @@ Fast navigation by question, Epic tier, and POV phase.
 | Integrate with Epic change control | [`phase-5-operations/02-change-management.md`](./phase-5-operations/02-change-management.md) |
 | Troubleshoot "policy not working" | [`phase-5-operations/03-troubleshooting.md`](./phase-5-operations/03-troubleshooting.md) |
 | Run a POV end-to-end | [`validation/01-pov-test-plan.md`](./validation/01-pov-test-plan.md) |
-| Score requirements with evidence | [`validation/02-evidence-matrix.md`](./validation/02-evidence-matrix.md) |
+| Map controls to HIPAA / HITRUST | [CSW-Compliance-Mapping — HIPAA](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HIPAA) |
+| Universal compliance evidence programme | [Compliance evidence playbook](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/docs/compliance-evidence-playbook.md) |
 
 ## By Epic tier
 

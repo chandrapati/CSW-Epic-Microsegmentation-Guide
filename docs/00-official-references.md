@@ -34,11 +34,12 @@ Common starting points (login required at [Epic on the Web](https://open.epic.co
 
 ## Healthcare compliance (CSW mapping)
 
-| Framework | Community runbook |
-|-----------|-------------------|
-| HIPAA Security Rule | [CSW-Compliance-Mapping — HIPAA](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HIPAA) |
-| HIPAA 2025 NPRM (proposed) | [HIPAA NPRM mapping](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HIPAA-2025-NPRM) |
-| HITRUST CSF | [HITRUST mapping](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HITRUST-CSF) |
+| Framework | Community runbook | Pair with this Epic guide |
+|-----------|-------------------|---------------------------|
+| HIPAA Security Rule | [HIPAA](./HIPAA/CSW-HIPAA-Technical-Runbook.md) · [repo](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HIPAA) | Phase 5 quarterly pack |
+| HIPAA 2025 NPRM (proposed) | [NPRM](./HIPAA-2025-NPRM/CSW-HIPAA-NPRM-Technical-Runbook.md) | Mandatory segmentation narrative |
+| HITRUST CSF | [HITRUST](./HITRUST-CSF/CSW-HITRUST-Technical-Runbook.md) | Multi-framework healthcare assessments |
+| **Epic EHR microsegmentation** | [**CSW-Epic-Microsegmentation-Guide**](https://github.com/chandrapati/CSW-Epic-Microsegmentation-Guide) | **Step-by-step Epic tier rollout** — scopes, ADM, Interconnect, enforce |
 
 ## Related community guides (this author)
 

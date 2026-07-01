@@ -77,6 +77,8 @@ application and integration tiers — batch ETL windows will surprise you.
 
 Full mapping: [CSW-Compliance-Mapping — HIPAA](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HIPAA)
 
+**Rollout guide:** [CSW-Epic-Microsegmentation-Guide](https://github.com/chandrapati/CSW-Epic-Microsegmentation-Guide) — Phase 5 §5.1 implements this pack for Epic estates.
+
 ---
 
 ## Next step

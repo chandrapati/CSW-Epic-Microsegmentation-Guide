@@ -5,6 +5,16 @@ artifacts and HIPAA §164.312 controls.
 
 Full framework mapping: [CSW-Compliance-Mapping — HIPAA](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HIPAA)
 
+**Companion docs in this programme:**
+
+| Doc | Link |
+|-----|------|
+| HIPAA technical runbook | [CSW-HIPAA-Technical-Runbook.md](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/HIPAA/CSW-HIPAA-Technical-Runbook.md) |
+| HIPAA 2025 NPRM (proposed rule) | [CSW-HIPAA-NPRM-Technical-Runbook.md](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/HIPAA-2025-NPRM/CSW-HIPAA-NPRM-Technical-Runbook.md) |
+| HITRUST CSF v11 | [CSW-HITRUST-Technical-Runbook.md](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/HITRUST-CSF/CSW-HITRUST-Technical-Runbook.md) |
+| Compliance evidence playbook | [compliance-evidence-playbook.md](https://github.com/chandrapati/CSW-Compliance-Mapping/blob/main/docs/compliance-evidence-playbook.md) |
+| Epic tier rollout (step-by-step) | [CSW-Epic-Microsegmentation-Guide](https://github.com/chandrapati/CSW-Epic-Microsegmentation-Guide) — Phase 5 §5.1 maps to this pack |
+
 ---
 
 ## Quarterly pack contents
