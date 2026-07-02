@@ -1,5 +1,7 @@
 # Cisco Secure Workload — Epic EHR Microsegmentation Guide
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=chandrapati.CSW-Epic-Microsegmentation-Guide&left_text=visitors)
+
 A **step-by-step practitioner guide** for microsegmenting **Epic** electronic
 health record (EHR) environments with **Cisco Secure Workload (CSW)** —
 from first agent install through ADM baseline, policy simulation, enforcement,
