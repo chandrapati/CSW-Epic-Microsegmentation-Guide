@@ -28,6 +28,18 @@ Common starting points (login required at [Epic on the Web](https://open.epic.co
 | Clarity / Caboodle | Reporting database architecture guides |
 | Security | Security and Privacy documentation |
 
+### open.epic (public — data-exchange design)
+
+| Topic | Link | Use it for |
+|-------|------|------------|
+| Design Overview | [open.epic/DesignOverview](https://open.epic.com/DesignOverview) | Enumerate the **interface surface** (HL7/FHIR/CDA/SMART/Bulk FHIR/etc.) and its security model — *not* server topology |
+| API & Interface specs | [open.epic — APIs](https://open.epic.com/) | Confirm supported methods, directions, and standards per interface |
+
+> **Scope note.** `open.epic` describes *how systems exchange data with Epic*
+> (interoperability design), which drives **integration-tier (T3) allow-lists**.
+> It does **not** describe deployment/server tiers — use your Epic
+> **Technical Overview** + **Network Requirements** for that.
+
 > **Practical note.** Export your site's **Network Requirements** and
 > **Interconnect port list** before Phase 3 policy authoring. CSW ADM will
 > show what actually runs; Epic docs show what was *designed*.

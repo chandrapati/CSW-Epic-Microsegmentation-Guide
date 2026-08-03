@@ -58,8 +58,10 @@ Epic versions and modules change port usage.
 | App server ↔ app server | TCP 443, Epic-proprietary | ADM shows process names |
 | App → Chronicles ODB | TCP 1521 (Oracle), varies | Often highest sensitivity |
 | Clarity ETL | TCP 1433/1521, batch windows | Time-bound allows possible |
-| HL7 v2 (MLLP) | TCP 2575 (classic), site-specific | Interconnect matrix is authoritative |
-| FHIR / REST APIs | TCP 443 | Growing share of interfaces |
+| HL7 v2 (MLLP) | TCP 2575 (classic), site-specific | Interconnect matrix is authoritative; no app auth → segmentation is the control |
+| FHIR / REST APIs (incl. Bulk FHIR, SMART) | TCP 443 (OAuth 2.0) | Growing share of interfaces; see [`phase-3.../02-interconnect-and-hl7.md`](../phase-3-policy-modeling/02-interconnect-and-hl7.md) |
+| DICOM (imaging) | TCP 104 / 11112, site-specific | PACS/VNA integration; confirm via ADM |
+| NCPDP (pharmacy) | Site-specific | e-prescribing / pharmacy interfaces |
 | LDAP / AD | TCP 389, 636 (LDAPS preferred) | Shared infra tier |
 | Kerberos | TCP/UDP 88 | AD dependency |
 | DNS | UDP/TCP 53 | |
