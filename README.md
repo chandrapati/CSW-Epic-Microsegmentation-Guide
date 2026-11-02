@@ -57,23 +57,13 @@ CSW-Epic-Microsegmentation-Guide/
 
 ---
 
-## Five-phase execution (summary)
+## Five phases
 
 ![Five phases for one Epic application family](csw-epic-five-phases.png)
 
-*A POV runs four to eight weeks. Production moves one tier at a time. Nothing is enforced until simulation is clean.*
+[1 · Foundation](./phase-1-foundation/README.md) · [2 · Visibility](./phase-2-visibility/README.md) · [3 · Policy](./phase-3-policy-modeling/README.md) · [4 · Enforce](./phase-4-enforcement/README.md) · [5 · Operate](./phase-5-operations/README.md)
 
-| Phase | Goal | Duration | Key doc |
-|-------|------|----------|---------|
-| **1 — Foundation** | CSW tenant, Epic scope tree, labels/filters | Days 1–10 | [`phase-1-foundation/README.md`](./phase-1-foundation/README.md) |
-| **2 — Visibility** | Agents on representative Epic tiers; ADM baseline | Days 11–28 | [`phase-2-visibility/README.md`](./phase-2-visibility/README.md) |
-| **3 — Policy modeling** | Tier isolation rules; Simulation; app-owner signoff | Days 29–45 | [`phase-3-policy-modeling/README.md`](./phase-3-policy-modeling/README.md) |
-| **4 — Enforcement** | Pilot enforce; functional allow/deny tests; log proof | Days 46–60 | [`phase-4-enforcement/README.md`](./phase-4-enforcement/README.md) |
-| **5 — Operations** | Quarterly evidence; drift; change control | Ongoing | [`phase-5-operations/README.md`](./phase-5-operations/README.md) |
-
-**POV teams:** start with [`validation/01-pov-test-plan.md`](./validation/01-pov-test-plan.md).
-
-**Healthcare compliance teams:** pair this guide with the [HIPAA technical runbook](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HIPAA) and [HITRUST mapping](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HITRUST-CSF) in [CSW-Compliance-Mapping](https://github.com/chandrapati/CSW-Compliance-Mapping) — this repo is the *how* for Epic tiers; those repos are the *what to prove* for audit.
+Running a proof of value? Start with the [test plan](./validation/01-pov-test-plan.md). The audit mapping lives in [CSW-Compliance-Mapping](https://github.com/chandrapati/CSW-Compliance-Mapping) — [HIPAA](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HIPAA) and [HITRUST](https://github.com/chandrapati/CSW-Compliance-Mapping/tree/main/HITRUST-CSF). This repo is how the Epic tiers get built; those are what an assessor is shown.
 
 ---
 
