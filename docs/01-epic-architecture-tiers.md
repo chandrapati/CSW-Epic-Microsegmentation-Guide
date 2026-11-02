@@ -35,6 +35,10 @@ informed by **observed flows (ADM)**, not static firewall diagrams alone.
 | **T5 — Database** | `epic-db` | Chronicles ODB, Clarity DB, Caboodle DB | Highest | Default-deny; smallest allow surface |
 | **T6 — Shared infra** | `shared-infra` | AD, DNS, NTP, backup, patch, SIEM, monitoring | Medium | Label + controlled allow to all tiers |
 
+![Epic reference tier model](../csw-epic-tier-model.png)
+
+*The same model as the landing page. The text form below is the accessible version.*
+
 ```text
   [T0 Clinical] ──443──► [T1 Web] ──► [T2 App] ──► [T5 Prod DB]
                               │            │

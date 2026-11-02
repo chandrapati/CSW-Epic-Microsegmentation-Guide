@@ -59,6 +59,10 @@ CSW-Epic-Microsegmentation-Guide/
 
 ## Five-phase execution (summary)
 
+![Five phases for one Epic application family](csw-epic-five-phases.png)
+
+*A POV runs four to eight weeks. Production moves one tier at a time. Nothing is enforced until simulation is clean.*
+
 | Phase | Goal | Duration | Key doc |
 |-------|------|----------|---------|
 | **1 — Foundation** | CSW tenant, Epic scope tree, labels/filters | Days 1–10 | [`phase-1-foundation/README.md`](./phase-1-foundation/README.md) |
@@ -75,29 +79,19 @@ CSW-Epic-Microsegmentation-Guide/
 
 ## Epic tier model (high level)
 
-```text
-                    ┌─────────────────────────────────────┐
-                    │  Clinical access (VDI / Hyperspace) │
-                    └──────────────────┬──────────────────┘
-                                       │ HTTPS
-                    ┌──────────────────▼──────────────────┐
-                    │  Web / presentation (OHS, proxies)  │
-                    └──────────────────┬──────────────────┘
-                                       │
-          ┌────────────────────────────┼────────────────────────────┐
-          │                            │                            │
-┌─────────▼─────────┐      ┌───────────▼──────────┐      ┌──────────▼─────────┐
-│ App / Chronicles  │      │ Interconnect / HL7   │      │ Clarity / Caboodle │
-│ (transactional)   │◄────►│ (interfaces)         │      │ (reporting / DW)   │
-└─────────┬─────────┘      └──────────────────────┘      └──────────┬─────────┘
-          │                                                         │
-┌─────────▼─────────┐                                    ┌──────────▼─────────┐
-│ Production DB     │                                    │ Analytics DB         │
-│ (Chronicles ODB)  │                                    │ (SQL / Oracle)       │
-└───────────────────┘                                    └──────────────────────┘
-```
+![Epic reference tier model](csw-epic-tier-model.png)
 
-Detail: [`docs/01-epic-architecture-tiers.md`](./docs/01-epic-architecture-tiers.md)
+*T0 clinical access reaches T5, the production database, only through the web and application tiers. Integration and reporting branch off that path and are isolated from it. Ports in this guide are candidates — confirm each one with ADM.*
+
+Detail, including the port table and the scope tree: [`docs/01-epic-architecture-tiers.md`](./docs/01-epic-architecture-tiers.md)
+
+## Why the integration tier matters
+
+![HL7 v2 has no application authentication; FHIR does](csw-epic-integration-tier.png)
+
+Epic's own design overview says HL7 v2 over TCP **will not rely on authentication** — it relies on other security mechanisms, which in practice means the network plus TLS where it is used. For that traffic, microsegmentation is the control rather than a complement to one. FHIR and SMART authenticate with OAuth 2.0, so the job there is bounding an identity that already exists.
+
+How to build the partner allowlist: [`phase-3-policy-modeling/02-interconnect-and-hl7.md`](./phase-3-policy-modeling/02-interconnect-and-hl7.md)
 
 ---
 
